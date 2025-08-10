@@ -15,17 +15,27 @@ export default async function handler(
 ) {
     if (request.method === "POST") {
         try {
-            const to = ["ivan@felicita.group", "julien@twwyachts.com"];
+            const to = ["info@accubusiness.ca"]; // Primary inbox for Accubusiness
 
             const {
                 name,
                 email,
                 phone,
+                subject,
+                message,
+                serviceInterest,
                 dates,
                 guests,
-                message,
-                yachtInterest,
-            } = request.body;
+            } = request.body as {
+                name: string;
+                email: string;
+                phone?: string;
+                subject?: string;
+                message?: string;
+                serviceInterest?: string;
+                dates?: string;
+                guests?: string;
+            };
 
             if (
                 !name ||
@@ -37,15 +47,16 @@ export default async function handler(
             const mailOptions = {
                 from: process.env.SMTP_FROM,
                 to,
-                subject: "New Yacht Charter Inquiry",
+                subject: subject || "New Website Inquiry",
                 html: generateEmail({
                     name,
                     email,
                     phone,
+                    subject,
                     dates,
                     guests,
                     message,
-                    yachtInterest,
+                    serviceInterest,
                 }),
             };
 
@@ -70,18 +81,20 @@ function generateEmail({
     name,
     email,
     phone,
+    subject,
     dates,
     guests,
     message,
-    yachtInterest,
+    serviceInterest,
 }: {
     name: string;
     email: string;
     phone?: string;
+    subject?: string;
     dates?: string;
     guests?: string;
     message?: string;
-    yachtInterest?: string;
+    serviceInterest?: string;
 }) {
     return `
         <html>
@@ -104,7 +117,7 @@ function generateEmail({
             <body>
                 <div class="container">
                     <div class="header">
-                        <h1>New Yacht Charter Inquiry</h1>
+                        <h1>New Accubusiness Website Inquiry</h1>
                     </div>
                     <div class="content">
                         <h2>Client Details</h2>
@@ -117,6 +130,11 @@ function generateEmail({
                                 <div class="info-label">Email</div>
                                 <div class="info-value">${email}</div>
                             </div>
+                            ${subject ? `
+                            <div class="info-item">
+                                <div class="info-label">Subject</div>
+                                <div class="info-value">${subject}</div>
+                            </div>` : ''}
                             ${phone ? `
                             <div class="info-item">
                                 <div class="info-label">Phone</div>
@@ -132,10 +150,10 @@ function generateEmail({
                                 <div class="info-label">Number of Guests</div>
                                 <div class="info-value">${guests}</div>
                             </div>` : ''}
-                            ${yachtInterest ? `
+                            ${serviceInterest ? `
                             <div class="info-item">
-                                <div class="info-label">Yacht of Interest</div>
-                                <div class="info-value">${yachtInterest}</div>
+                                <div class="info-label">Service of Interest</div>
+                                <div class="info-value">${serviceInterest}</div>
                             </div>` : ''}
                         </div>
                         ${message ? `
@@ -147,7 +165,7 @@ function generateEmail({
                         </div>` : ''}
                     </div>
                     <div class="footer">
-                        <p>Riviera Yachts | &copy; ${new Date().getFullYear()} All Rights Reserved</p>
+                        <p>Accubusiness | &copy; ${new Date().getFullYear()} All Rights Reserved</p>
                     </div>
                 </div>
             </body>

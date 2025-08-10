@@ -7,10 +7,10 @@ export default function Privacy() {
   return (
     <>
       <Head>
-        <title>Privacy Policy | Riviera Yachts</title>
+        <title>Privacy Policy | Accubusiness</title>
         <meta
           name="description"
-          content="Privacy Policy for Riviera Yachts - Learn how we handle and protect your information."
+          content="Privacy Policy for Accubusiness — how we collect, use, and protect your information for our tax, bookkeeping, and advisory services."
         />
       </Head>
       <Navigation />
@@ -18,13 +18,14 @@ export default function Privacy() {
         <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
 
         <section className="mb-8">
-          <p className="mb-4">Last Updated: June 15, 2023</p>
           <p className="mb-4">
-            At Riviera Yachts, we respect your privacy and are committed to
-            protecting your personal data. This privacy policy will inform you
-            about how we look after your personal data when you visit our
-            website and tell you about your privacy rights and how the law
-            protects you.
+            Last Updated: {new Date().toLocaleDateString()}
+          </p>
+          <p className="mb-4">
+            At Accubusiness, we respect your privacy and are committed to
+            protecting your personal data. This policy explains how we handle
+            information when you visit our website, contact us, or use our
+            services.
           </p>
         </section>
 
@@ -66,7 +67,7 @@ export default function Privacy() {
           <ul className="list-disc ml-6 mb-4">
             <li className="mb-2">Provide, operate, and maintain our website</li>
             <li className="mb-2">
-              Process and fulfill your yacht charter requests
+              Provide tax preparation, bookkeeping, and consulting services
             </li>
             <li className="mb-2">
               Improve, personalize, and expand our website
@@ -99,11 +100,9 @@ export default function Privacy() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Cookies</h2>
           <p className="mb-4">
-            Our website uses cookies to enhance your experience. Cookies are
-            small files that a site or its service provider transfers to your
-            computer&apos;s hard drive through your web browser (if you allow)
-            that enables the site&apos;s or service provider&apos;s systems to
-            recognize your browser and capture and remember certain information.
+            We use cookies and similar technologies to improve your experience,
+            analyze site traffic, and understand usage. You can control cookies
+            through your browser settings.
           </p>
         </section>
 
@@ -156,8 +155,8 @@ export default function Privacy() {
             us:
           </p>
           <ul className="list-disc ml-6">
-            <li className="mb-2">By email: info@rivierayachts.com</li>
-            <li className="mb-2">By phone: +33 (0) 4 93 63 18 08</li>
+            <li className="mb-2">By email: info@accubusiness.ca</li>
+            <li className="mb-2">By phone: 1-800-989-6507</li>
           </ul>
         </section>
       </main>

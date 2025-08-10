@@ -59,7 +59,9 @@ const Footer = () => {
       title: "Navigation",
       links: [
         { text: "Home", url: "/" },
-        { text: "Fleet", url: "/fleet" },
+        { text: "Our Services", url: "/our-services" },
+        { text: "About Us", url: "/about" },
+        { text: "Reviews", url: "/reviews" },
         { text: "Contact", url: "/contact" },
       ],
     },
@@ -74,18 +76,18 @@ const Footer = () => {
     {
       title: "Contact Us",
       items: [
-        { icon: Phone, text: "+33 6 75 19 66 98", url: "tel:+33675196698" },
+        { icon: Phone, text: "1-800-989-6507", url: "tel:+18009896507" },
         {
           icon: Mail,
-          text: "charter@rivierayachts.com",
-          url: "mailto:charter@rivierayachts.com",
+          text: "info@accubusiness.ca",
+          url: "mailto:info@accubusiness.ca",
         },
         {
           icon: MessageSquare,
-          text: "WhatsApp: +33 6 75 19 66 98",
-          url: "https://wa.me/+33675196698?text=I am reaching out in reference to a yacht charter from the Riviera Yachts website.",
+          text: "WhatsApp: 1-800-989-6507",
+          url: "https://wa.me/18009896507?text=I am reaching out from the Accubusiness website.",
         },
-        { icon: MapPin, text: "Port Hercule, Monaco" },
+        { icon: MapPin, text: "1066 West Hastings, Vancouver, BC" },
       ],
     },
   ];
@@ -106,16 +108,16 @@ const Footer = () => {
               <div className="relative w-48 h-14">
                 <Image
                   src="/logo.png"
-                  alt="Riviera Yachts"
+                  alt="Accubusiness"
                   fill
                   className="object-contain object-left"
                 />
               </div>
             </Link>
             <p className="text-gray-300 text-sm max-w-xs font-light">
-              Experience the epitome of luxury yachting in the Mediterranean
-              with Riviera Yachts. Specializing in premium yacht charters for
-              unforgettable journeys.
+              Accounting and business consulting made simple. Accubusiness
+              offers affordable tax, bookkeeping, and advisory services for
+              individuals and companies across Canada.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social, index) => {
@@ -198,10 +200,10 @@ const Footer = () => {
         <div className="mt-16 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm font-light">
-              © {currentYear} Riviera Yachts. All rights reserved.
+              © {currentYear} Accubusiness. All rights reserved.
             </p>
             <p className="text-gray-400 text-sm font-light">
-              Designed for exceptional experiences on the Mediterranean
+              Serving clients across Vancouver and Canada
             </p>
           </div>
         </div>

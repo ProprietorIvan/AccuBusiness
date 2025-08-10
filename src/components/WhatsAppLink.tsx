@@ -8,7 +8,7 @@ interface WhatsAppLinkProps {
 
 const WhatsAppLink: FC<WhatsAppLinkProps> = ({ children, className }) => {
   const WHATSAPP_LINK =
-    "https://wa.me/+33675196698?text=I am reaching out in reference to a yacht charter from the Riviera Yachts website.";
+    "https://wa.me/18009896507?text=I am reaching out from the Accubusiness website about accounting services.";
 
   const handleClick = async (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();

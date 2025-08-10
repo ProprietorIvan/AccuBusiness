@@ -7,10 +7,10 @@ const TermsOfService = () => {
   return (
     <>
       <Head>
-        <title>Terms of Service | Riviera Yachts</title>
+        <title>Terms of Service | Accubusiness</title>
         <meta
           name="description"
-          content="View the terms of service for Riviera Yachts, detailing the conditions for using our yacht charter services."
+          content="View the terms of service for Accubusiness, detailing the conditions for using our tax, bookkeeping, and advisory services."
         />
       </Head>
 
@@ -37,14 +37,14 @@ const TermsOfService = () => {
                   Introduction
                 </h2>
                 <p>
-                  Welcome to Riviera Yachts. These terms and conditions govern
+                  Welcome to Accubusiness. These terms and conditions govern
                   your use of our website and services. By accessing our website
                   or using our services, you agree to these terms. Please read
                   them carefully.
                 </p>
                 <p>
                   These Terms of Service (&quot;Terms&quot;) constitute a
-                  legally binding agreement between you and Riviera Yachts
+                  legally binding agreement between you and Accubusiness
                   governing your access to and use of the website and services.
                 </p>
               </section>
@@ -54,24 +54,15 @@ const TermsOfService = () => {
                   Use of Services
                 </h2>
                 <p>
-                  Riviera Yachts provides a platform for users to browse,
-                  inquire about, and book luxury yacht charters. Our services
+                  Accubusiness provides a platform for users to learn about and
+                  request accounting and business services. Our services
                   include:
                 </p>
                 <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-600">
-                  <li>Yacht charter inquiry and booking services</li>
-                  <li>
-                    Information about yacht specifications, availability, and
-                    pricing
-                  </li>
-                  <li>
-                    Communication channels between clients and our yacht charter
-                    specialists
-                  </li>
-                  <li>
-                    Informational content about yacht chartering, destinations,
-                    and experiences
-                  </li>
+                  <li>Tax preparation and filing support</li>
+                  <li>Bookkeeping and payroll assistance</li>
+                  <li>Business and corporate tax consulting</li>
+                  <li>Client communication and appointment scheduling</li>
                 </ul>
               </section>
 
@@ -108,20 +99,16 @@ const TermsOfService = () => {
                   Booking and Payments
                 </h2>
                 <p>
-                  All yacht charter bookings are subject to availability and
-                  confirmation. Prices are as quoted on our website or as
-                  otherwise communicated to you.
+                  Service engagements are subject to confirmation. Prices are as
+                  quoted on our website or as otherwise communicated to you.
                 </p>
                 <p>
-                  A deposit is required to confirm your booking, with the
-                  balance due before the charter date as specified in your
-                  charter agreement. Payment terms will be detailed in your
-                  booking confirmation.
+                  Payment terms will be specified in your engagement letter or
+                  invoice. Certain services may require a retainer.
                 </p>
                 <p>
-                  Cancellation policies vary depending on the yacht and charter
-                  period. Specific cancellation terms will be provided in your
-                  charter agreement.
+                  Cancellation and rescheduling policies vary by service.
+                  Specific terms will be provided in your engagement letter.
                 </p>
               </section>
 
@@ -154,9 +141,9 @@ const TermsOfService = () => {
                 </h2>
                 <p>
                   All content on our website, including text, graphics, logos,
-                  images, audio, video, and software, is the property of Riviera
-                  Yachts or its content suppliers and is protected by
-                  international copyright laws.
+                  images, audio, video, and software, is the property of
+                  Accubusiness Yachts or its content suppliers and is protected
+                  by international copyright laws.
                 </p>
                 <p>
                   You may not reproduce, modify, distribute, display, perform,
@@ -171,15 +158,15 @@ const TermsOfService = () => {
                 </h2>
                 <p>
                   Our services are provided on an &quot;as is&quot; and &quot;as
-                  available&quot; basis. Riviera Yachts makes no representations
+                  available&quot; basis. Accubusiness makes no representations
                   or warranties of any kind, express or implied, regarding the
                   operation of our services or the information, content,
                   materials, or products included on our website.
                 </p>
                 <p>
-                  To the full extent permissible by applicable law, Riviera
-                  Yachts disclaims all warranties, express or implied, including
-                  but not limited to, implied warranties of merchantability and
+                  To the full extent permissible by applicable law, Accubusiness
+                  disclaims all warranties, express or implied, including but
+                  not limited to, implied warranties of merchantability and
                   fitness for a particular purpose.
                 </p>
               </section>
@@ -189,7 +176,7 @@ const TermsOfService = () => {
                   Limitation of Liability
                 </h2>
                 <p>
-                  Riviera Yachts will not be liable for any damages of any kind
+                  Accubusiness will not be liable for any damages of any kind
                   arising from the use of our services, including but not
                   limited to direct, indirect, incidental, punitive, and
                   consequential damages.
@@ -201,8 +188,8 @@ const TermsOfService = () => {
                   Indemnification
                 </h2>
                 <p>
-                  You agree to indemnify, defend, and hold harmless Riviera
-                  Yachts, its officers, directors, employees, agents, and
+                  You agree to indemnify, defend, and hold harmless
+                  Accubusiness, its officers, directors, employees, agents, and
                   suppliers from and against all losses, expenses, damages, and
                   costs, including reasonable attorneys&apos; fees, resulting
                   from any violation of these Terms or any activity related to
@@ -228,8 +215,8 @@ const TermsOfService = () => {
                 </h2>
                 <p>
                   These Terms shall be governed by and construed in accordance
-                  with the laws of Monaco, without regard to its conflict of law
-                  provisions.
+                  with the laws of British Columbia, Canada, without regard to
+                  its conflict of law provisions.
                 </p>
               </section>
 
@@ -258,11 +245,11 @@ const TermsOfService = () => {
                 </p>
                 <div className="mt-4">
                   <p>
-                    <strong>Riviera Yachts</strong>
+                    <strong>Accubusiness</strong>
                   </p>
-                  <p>Port Hercule, Monaco</p>
-                  <p>Email: legal@rivierayachts.com</p>
-                  <p>Phone: +377 6 43 91 76 18</p>
+                  <p>1066 West Hastings, Vancouver, BC</p>
+                  <p>Email: info@accubusiness.ca</p>
+                  <p>Phone: 1-800-989-6507</p>
                 </div>
               </section>
             </div>
